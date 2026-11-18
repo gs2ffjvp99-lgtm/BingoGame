@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings.xml
+    Every piece of text shown to the user. Keeping text here (instead of in
+    Java) makes translation easy. %1$s / %1$d are placeholders that
+    getString(id, values...) fills in.
+-->
+<resources>
+    <string name="app_name">Bingo Game</string>
+    <string name="title_game">Bingo</string>
+    <string name="title_records">Bingo records</string>
+    <string name="default_username">Player</string>
+
+    <!-- Start screen -->
+    <string name="title_bingo">BINGO</string>
+    <string name="subtitle_bingo">Get five in a row before the computer does.</string>
+    <string name="hint_username">Your username</string>
+    <string name="error_username_empty">Enter a username to start</string>
+    <string name="button_start">Start game</string>
+    <string name="button_view_records">View records</string>
+    <string name="rules">How to play\n1. Tap a number on your card to call it.\n2. The computer then calls a number.\n3. Every called number is marked on both cards.\n4. The first full row, column or diagonal wins.\nTip: work on one line at a time. The computer does.</string>
+
+    <!-- Game screen -->
+    <string name="label_player">Player: %1$s</string>
+    <string name="label_round">Round %1$d</string>
+    <string name="label_computer_progress">Computer best line: %1$d of %2$d</string>
+    <string name="legend">Blue: your calls     Magenta: computer calls     Yellow: your Bingo</string>
+    <string name="status_start">Your turn, %1$s. Tap any number.</string>
+    <string name="status_computer_called">The computer called %1$d. Your turn.</string>
+    <string name="status_player_won">Bingo in round %1$d!\nYour five numbers: %2$s</string>
+    <string name="status_computer_won">The computer got Bingo in round %1$d.\nIts five numbers: %2$s</string>
+    <string name="button_new_game">New game</string>
+    <string name="button_records">Records</string>
+    <string name="button_play_again">Play again</string>
+    <string name="button_close">Close</string>
+    <string name="dialog_title_win">Bingo! You win</string>
+    <string name="dialog_title_lose">The computer wins</string>
+    <string name="toast_record_saved">Bingo saved to the database</string>
+    <string name="toast_record_failed">The record could not be saved. Try another game.</string>
+
+    <!-- Records screen -->
+    <string name="label_record_count">Saved records: %1$d</string>
+    <string name="empty_records">No records yet. Win a game and your Bingo will appear here.</string>
+    <string name="record_item">#%1$d  %2$s\nRound: %3$d\nBingo numbers: %4$s\nSystem time: %5$s</string>
+    <string name="button_clear_records">Delete all records</string>
+    <string name="dialog_clear_title">Delete all records?</string>
+    <string name="dialog_clear_message">Every saved Bingo will be removed from the database. This cannot be undone.</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="toast_records_cleared">Records deleted: %1$d</string>
+</resources>

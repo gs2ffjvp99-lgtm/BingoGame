@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------
+# Files that must NOT be uploaded to GitHub.
+# They are generated on each computer and would only add noise.
+# ---------------------------------------------------------------
+
+# Gradle caches and build output (recreated by "Build > Clean/Rebuild")
+.gradle/
+build/
+app/build/
+.kotlin/
+
+# Machine-specific Android SDK path
+local.properties
+
+# Android Studio / IntelliJ settings
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing keys and secrets (never commit these)
+*.jks
+*.keystore
+google-services.json
+
+# Operating-system junk files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

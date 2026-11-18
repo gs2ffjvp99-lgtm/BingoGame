@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml
+    Palette inspired by a paper Bingo card: pale green card stock,
+    blue and magenta "dauber" ink for the two players, and a yellow
+    highlighter for the winning line.
+-->
+<resources>
+    <!-- App chrome -->
+    <color name="primary">#1F5F4A</color>          <!-- action bar, main button -->
+    <color name="primary_dark">#164536</color>     <!-- status bar -->
+    <color name="accent">#C2185B</color>           <!-- text cursor, focused fields -->
+    <color name="background">#EAF2EC</color>       <!-- screen background -->
+
+    <!-- Bingo cells -->
+    <color name="cell_empty">#FFFFFF</color>       <!-- number not called yet -->
+    <color name="cell_border">#A9C7B5</color>      <!-- outline of every cell -->
+    <color name="cell_player">#26408B</color>      <!-- called by the player -->
+    <color name="cell_computer">#C2185B</color>    <!-- called by the computer -->
+    <color name="cell_bingo">#FFD23F</color>       <!-- player's winning line -->
+
+    <!-- Text -->
+    <color name="text_primary">#1C2421</color>
+    <color name="text_secondary">#4E5D56</color>
+    <color name="text_on_color">#FFFFFF</color>
+</resources>

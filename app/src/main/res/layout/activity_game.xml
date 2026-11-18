@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_game.xml (game screen)
+    Top: player name, round and computer progress.
+    Middle: the 5 x 5 card. The 25 cells are added in GameActivity.java.
+    Bottom: status message, colour legend and buttons.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <!-- "Player: name" -->
+    <TextView
+        android:id="@+id/text_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Round counter (left) and computer progress (right) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_round"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_computer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/cell_computer"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--
+        The Bingo card. Height 0dp + weight 1 = "use the space that is left";
+        SquareGridLayout then shrinks itself to a square inside that space.
+    -->
+    <com.example.bingogame.ui.SquareGridLayout
+        android:id="@+id/grid_board"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1" />
+
+    <!-- Whose turn it is / who won -->
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:minLines="2"
+        android:textColor="@color/text_primary"
+        android:textSize="17sp" />
+
+    <!-- What the cell colours mean -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/legend"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_new_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:text="@string/button_new_game"
+            android:textColor="@color/text_on_color" />
+
+        <Button
+            android:id="@+id/button_records"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/button_records" />
+    </LinearLayout>
+</LinearLayout>

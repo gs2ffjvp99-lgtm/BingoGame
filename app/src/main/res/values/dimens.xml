@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dimens.xml: sizes used by the Bingo cells (dp scales with screen density). -->
+<resources>
+    <dimen name="cell_margin">3dp</dimen>          <!-- gap around each cell -->
+    <dimen name="cell_corner_radius">10dp</dimen>  <!-- rounded corners -->
+    <dimen name="cell_stroke">1dp</dimen>          <!-- border thickness -->
+    <dimen name="screen_padding">16dp</dimen>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml
+    Declares the app's three screens (Activities) and which one opens
+    first when the user taps the app icon.
+    No permissions are needed: an app's own SQLite database lives in its
+    private storage folder.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BingoGame">
+
+        <!-- Start screen: username input. exported="true" because the launcher opens it. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Game screen: only opened from inside the app, so exported="false". -->
+        <activity
+            android:name=".GameActivity"
+            android:exported="false"
+            android:label="@string/title_game" />
+
+        <!-- Records screen: shows the rows of the SQLite table. -->
+        <activity
+            android:name=".RecordActivity"
+            android:exported="false"
+            android:label="@string/title_records" />
+    </application>
+
+</manifest>

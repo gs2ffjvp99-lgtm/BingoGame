@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    themes.xml
+    Uses Android's built-in Material theme (no extra library needed) and
+    swaps in the Bingo colours.
+-->
+<resources>
+    <style name="Theme.BingoGame" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
